@@ -1,0 +1,19 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  @include center-flex(row);
+  padding: 3rem 0;
+  background: linear-gradient(90deg, #24618f, #2976b0);
+  cursor: default;
+}
+
+.container {
+  width: 500px;
+  padding: 2.3rem 2rem;
+}

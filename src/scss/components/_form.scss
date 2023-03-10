@@ -1,0 +1,40 @@
+.task-form {
+  @include center-flex(row);
+  width: 100%;
+  margin: 2rem 0 2.8rem 0;
+
+  ::placeholder {
+    font-size: 1.6rem;
+  }
+
+  input {
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    padding: .95rem 1rem .65rem 1rem;
+    border: none;
+    border-bottom: 2px solid $color-secundary;
+    border-radius: 1rem 0 0 0;
+    outline: none;
+    background-color: #eee;
+    font-size: 1.6rem;
+    color: $color-text;
+    cursor: auto;
+  }
+
+  button {
+    font-family: 'Montserrat', sans-serif;
+    padding: .9rem 1.2rem;
+    border: none;
+    border-radius: 0 0 1rem 0;
+    background-color: $color-secundary;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #eee;
+    cursor: pointer;
+    transition: .3s all;
+    
+    &:hover {
+      background-color: $color-primary;
+    }
+  }
+}

@@ -1,0 +1,16 @@
+.tasks-container {
+  position: relative;
+  width: 100%;
+
+  .task-counter {
+    @include row-justify-flex(space-between);
+    margin-bottom: .5rem;
+
+    p {
+      display: inline-block;
+      font-size: 1.7rem;
+      font-weight: 600;
+      color: darken($color-text, 50%);
+    }
+  }
+}

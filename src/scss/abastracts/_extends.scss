@@ -1,0 +1,49 @@
+%b {
+  display: inline-block;
+  font-size: 1.45rem;
+}
+
+%task-box {
+  @include row-justify-flex(space-between);
+  margin: .6rem 0;
+  padding: 1rem .5rem;
+  border-left: 6px solid $color-tertiary;
+  border-radius: 5px;
+  background-color: #eee;
+
+  .task-box {
+    &-content {
+      b.one-digit {
+        @extend %b;
+        width: 1.5rem;
+      }
+      b.two-digits {
+        @extend %b;
+        width: 2.5rem;
+      }
+      b.three-digits {
+        @extend %b;
+        width: 3.35rem;
+      }
+    }
+  
+    &-options {
+      @include row-justify-flex(space-around);
+      width: 7rem;
+      
+      
+      & > * {
+        display: inline-block;
+        width: 2.15rem;
+        font-size: 2rem;
+        opacity: .8;
+        cursor: pointer;
+        transition: .1s all;
+  
+        &:hover {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}

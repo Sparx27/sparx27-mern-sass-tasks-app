@@ -1,0 +1,8 @@
+.task-box {
+ @extend %task-box;
+}
+
+.task-box-completed {
+  @extend %task-box;
+  border-left: 6px solid $color-primary;
+}
